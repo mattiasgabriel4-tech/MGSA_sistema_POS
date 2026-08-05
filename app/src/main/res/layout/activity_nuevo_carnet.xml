@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo carnet"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#eeeeee"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnElegirFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Elegir foto" />
+
+        <EditText android:id="@+id/etDogName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Nombre del perro *" />
+        <EditText android:id="@+id/etBreed" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Raza" />
+        <EditText android:id="@+id/etSex" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Sexo (Macho/Hembra)" />
+        <EditText android:id="@+id/etColor" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Color" />
+        <EditText android:id="@+id/etBirthDate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Fecha nacimiento (AAAA-MM-DD)" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#dddddd" android:layout_marginVertical="12dp" />
+
+        <EditText android:id="@+id/etOwnerName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Nombre del dueño/a *" />
+        <EditText android:id="@+id/etOwnerPhone" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Teléfono" android:inputType="phone" />
+        <EditText android:id="@+id/etOwnerEmail" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress" />
+        <EditText android:id="@+id/etOwnerAddress" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Dirección" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#dddddd" android:layout_marginVertical="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Vacunas" android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/vacunasContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnAgregarVacuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+ Agregar vacuna" />
+
+        <Button
+            android:id="@+id/btnGuardarCarnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Guardar carnet" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

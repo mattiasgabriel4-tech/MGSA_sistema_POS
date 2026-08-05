@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CarnetPerritos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1f6f43</item>
+        <item name="colorPrimaryDark">#154d2f</item>
+        <item name="colorAccent">#1f6f43</item>
+    </style>
+</resources>
